@@ -54,6 +54,25 @@ We welcome contributions from the community to enhance and expand the DecoupledL
 
 - **Performance Benchmarks**: Conduct performance benchmarks and comparisons with other optimizers to assess the DecoupledLionW optimizer's efficiency and effectiveness in different scenarios.
 
+Certainly! Here's an updated roadmap section for the DecoupledLionW optimizer with three optimizations that can be made to further enhance its performance:
+
+
+We welcome contributions from the community to improve and optimize the DecoupledLionW optimizer. Here are three potential optimizations that can be explored:
+
+1. **Acceleration Techniques**: Investigate and implement acceleration techniques such as adaptive learning rate schedules, learning rate warm-up strategies, or gradient clipping. These techniques can improve the convergence speed and stability of the optimizer, leading to faster and more efficient training.
+
+2. **Advanced Weight Decay Strategies**: Explore advanced weight decay strategies that can better regularize the model and prevent overfitting. This could include techniques like layer-wise or group-wise weight decay, adaptive weight decay based on layer characteristics, or dynamic weight decay methods.
+
+3. **Parallel and Distributed Computing**: Extend the optimizer's capabilities to support parallel and distributed training. This optimization could involve implementing techniques like model parallelism or communication-efficient gradient aggregation to scale the training process and handle larger models and datasets.
+
+Contributions in these areas, as well as other optimizations and improvements, are highly encouraged. Feel free to open issues, submit pull requests, or start discussions in the repository to contribute and collaborate with the community.
+
+We appreciate your interest in the DecoupledLionW optimizer and look forward to your contributions to make it even more powerful and efficient.
+
+## License
+
+This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for more details.
+
 Please feel free to open issues, submit pull requests, or start discussions in the repository to contribute and collaborate with the community.
 
 ## License
