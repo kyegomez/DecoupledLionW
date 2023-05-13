@@ -7,7 +7,33 @@ from torch.optim.optimizer import Optimizer
 
 log = logging.getLogger(__name__)
 
+
 class DecoupledLionW(Optimizer):
+
+    """
+
+    DecoupledLionW is an optimizer designed to improve training performance and convergence for deep learning models.
+
+    It is an extension of the Lion optimizer, incorporating decoupled weight decay and a momentum-based update rule.
+
+    The optimizer utilizes the Adam-like update rule, where the weight decay is applied separately from the gradient update.
+
+    The update rule consists of three steps: weight decay, momentum update, and momentum decay.
+
+    Weight decay reduces the magnitude of the model's weights, preventing overfitting and improving generalization.
+
+    The momentum update is an interpolation between the current gradient and the previous momentum state, allowing for faster convergence and smoother optimization.
+
+    Momentum decay gradually reduces the momentum term over time, preventing it from becoming too large and destabilizing the optimization process.
+
+    The optimizer supports both single-node and multi-node distributed training, enabling efficient training on parallel computing environments.
+
+    It provides various metric functions to track the optimization process, such as L2 norm of moments, parameters, updates, and gradients, as well as cosine similarity between updates and gradients.
+    
+    The optimizer allows reporting per-parameter metrics to analyze the behavior of individual model parameters during training.
+    """
+
+
     metric_functions = {
         'l2_norm/moment': lambda param, optim_state, step_tensor: torch.linalg.vector_norm(optim_state['exp_avg']),
         'l2_norm/param': lambda param, optim_state, step_tensor: torch.linalg.vector_norm(param.data),
