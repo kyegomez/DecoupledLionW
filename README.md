@@ -54,8 +54,6 @@ We welcome contributions from the community to enhance and expand the DecoupledL
 
 - **Performance Benchmarks**: Conduct performance benchmarks and comparisons with other optimizers to assess the DecoupledLionW optimizer's efficiency and effectiveness in different scenarios.
 
-Certainly! Here's an updated roadmap section for the DecoupledLionW optimizer with three optimizations that can be made to further enhance its performance:
-
 
 We welcome contributions from the community to improve and optimize the DecoupledLionW optimizer. Here are three potential optimizations that can be explored:
 
