@@ -54,9 +54,7 @@ We welcome contributions from the community to enhance and expand the DecoupledL
 
 - **Performance Benchmarks**: Conduct performance benchmarks and comparisons with other optimizers to assess the DecoupledLionW optimizer's efficiency and effectiveness in different scenarios.
 
-
-We welcome contributions from the community to improve and optimize the DecoupledLionW optimizer. Here are three potential optimizations that can be explored:
-
+Or contribute to the following optimizations or other optimizations
 1. **Acceleration Techniques**: Investigate and implement acceleration techniques such as adaptive learning rate schedules, learning rate warm-up strategies, or gradient clipping. These techniques can improve the convergence speed and stability of the optimizer, leading to faster and more efficient training.
 
 2. **Advanced Weight Decay Strategies**: Explore advanced weight decay strategies that can better regularize the model and prevent overfitting. This could include techniques like layer-wise or group-wise weight decay, adaptive weight decay based on layer characteristics, or dynamic weight decay methods.
